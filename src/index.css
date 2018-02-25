@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  flex-direction: row;
+}
+
+article {
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+  transition:top 0.55s cubic-bezier(0, 0, 0, 1.29), width 0.55s cubic-bezier(0, 0, 0, 1.29), left 0.55s cubic-bezier(0, 0, 0, 1.29), height 0.55s cubic-bezier(0, 0, 0, 1.24);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+.articleShadow {
+  margin-bottom: 40px;
+}
+
+article figure {
+  margin: 0;
+  height: 300px;
+  overflow: hidden;
+}
+
+article img {
+  width: 100vw;
+  margin-top: -500px;
+}
+
+.article__inner {
+  font-size: 18px;
+  line-height: 1.6;
+  width: 400px;
+  margin: auto;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+body.no-overflow {
+  overflow: hidden;
+}
+
+.article__close {
+  position: fixed;
+  font-size: 35px;
+  color: white;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+}
